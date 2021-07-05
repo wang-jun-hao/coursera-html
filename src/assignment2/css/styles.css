@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 175%;
+}
+
+section.inner {
+    position: relative;
+    background: slategrey;
+    border: black 1px solid;
+    margin: 10px 10px 20px 10px;
+}
+
+@media (min-width: 992px) {
+    section.outer {
+        width: 33%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.outer.chicken, section.outer.beef {
+        width: 50%;
+        float: left;
+    }
+
+    section.outer.sushi {
+        clear: left;
+    }
+}
+
+
+.title {
+    position: absolute;
+    right: 0px;
+    border: black 1px solid;
+    width: 100px;
+    text-align: center;
+    font-size: 125%;
+}
+
+#chicken {
+    background: pink;
+}
+
+#beef {
+    background: darkred;
+    color: white;
+}
+
+#sushi {
+    background: palegoldenrod;
+}
+
+.itemDescription {
+    margin-top: 30px;
+    padding: 0px 10px 0px 10px;
+}
